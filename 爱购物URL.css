@@ -1,0 +1,1037 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+	* {padding: 0px;margin: 0px;}
+	body {
+		background-color: rgba(179,179,179,0.4);
+	}
+
+
+	/* body {
+		display: flex;
+	} */
+	
+	/* body里最大盒子 */
+	/* body .zuida {
+		display: flex;
+		justify-content: center;
+		flex-flow: column nowrap;
+	}
+ */
+	header {/*头部*/
+		width: 100%;
+		height: 80px;
+		position: relative;
+	}
+	header span {
+		position: absolute;
+		top: 10px;
+		right: 20px;
+		cursor: pointer;
+	}
+	header img {
+		width: 100%;
+		height: 100%;
+	}
+	/*导航栏*/
+	nav {
+		width: 100%;
+		height: 130px;
+		background-color: cornflowerblue;
+	}
+	nav .div1 {
+		width: 100%;
+		height: 30px;
+		background-color: rgba(195,195,195,1.0);
+		line-height: 30px;
+		font-size: 14px;
+		font-family: '微软雅黑';
+	}
+	nav .div1 .span1 {
+		margin-left: 140px;
+	}
+	nav .div1 .div1-1 {
+		display: inline-block;
+		margin-left: 30px;
+	}
+	nav .div1 .div1-2 {
+		display: inline-block;
+		margin-left: 430px;
+	}
+	nav .div1 div a {
+		margin: 5px;
+		text-decoration: none;
+		color: white;
+	}
+	nav .div1 div .a1 {
+		color: red;
+	}
+	nav .div1 div a:hover {
+		color: red;
+	}
+	nav .div1 .div1-2 span {
+		color: white;
+	}
+	/*导航栏第二个盒子*/
+	nav .div2 {
+		width: 100%;
+		height: 70px;
+		background-color: rgba(232,232,232,1.00);
+		
+	}
+	nav .div2 a:nth-of-type(1) {
+		margin-left: 140px;
+		text-decoration: none;
+		
+	}
+	nav .div2 a:nth-of-type(2) {
+		text-decoration: none;
+	}
+	nav .div2 a img {
+		vertical-align: bottom;
+	}
+	nav .div2 input:nth-of-type(1) {
+		width: 350px;
+		height: 30px;
+		margin-left: 70px;
+		outline-style: none;
+		border: 2px solid red;
+	}
+	nav .div2 input:nth-of-type(2) {
+		width: 80px;
+		height: 32px;
+		background-color: red;
+		border: none;
+		vertical-align: bottom;
+		color: white;
+		cursor: pointer;
+	}
+		nav .div2 input:nth-of-type(3) {
+		width: 80px;
+		height: 32px;
+		background-color: saddlebrown;
+		border: none;
+		vertical-align: bottom;
+		cursor: pointer;
+		color: white;
+	}
+	nav .div2 input:nth-of-type(3):hover {
+		color: red;
+	}
+	/*导航栏第三个盒子*/
+	nav .div3 {
+		width: 100%;
+		height: 30px;
+		background-color: white;
+		line-height: 30px;
+		font-family: '微软雅黑';
+	}
+	nav .div3 .div3-1 a {
+		text-decoration: none;
+		color: black;
+		margin: 15px;
+	}
+	nav .div3 .div3-1 {
+		margin-left: 400px;
+	}
+	nav .div3 .div3-1 a:hover {
+		color: red;
+	}
+/*	侧导航栏*/
+	aside {
+		width: 100%;
+		height: 550px;
+/*		background-color: darkgoldenrod;*/
+		position: relative;
+	}
+	aside .div1 {/*侧导航栏大盒子*/
+		width: 250px;
+		height: 520px;
+		background-color: cadetblue;
+		position: absolute;
+		left: 140px;
+		top: -30px;
+		z-index: 999;
+	}
+	aside .div1 .div1-1 {/*侧导航栏“全部分类”*/
+		width: 100%;
+		height: 30px;
+		background-color: red;
+		line-height: 30px;
+		text-align: center;
+		cursor: pointer;
+		color: white;
+	}
+	aside .div1 .div1-2 {/*测导航栏小盒子*/
+		width: 100%;
+		height: 70px;
+		background-color: rgba(0,0,0,0.6);
+		position: relative;
+	}
+	aside .div1 .div1-2 a {
+		text-decoration: none;
+		color: rgba(249,249,249,0.5);
+		font-size: 13px;
+		position: absolute;
+		left: 20px;
+		top: 10px;
+		line-height: 20px;
+	}
+	aside .div1 .div1-2 a .sp1{
+		font-size: 16px;
+		margin-left: 10px;
+		color: rgba(249,249,249,0.7);
+	}
+	aside .div1 .div1-2 a .sp2 {
+		margin-left: 38px;
+	}
+	aside .div1 .div1-2 a span {
+		margin-left: 15px;
+	}
+	aside .div1 .div1-2 a span:hover{
+		color: red;
+	}
+
+	/* 轮播图 */
+	aside .div2 {/*侧导航背景盒子*/
+		width: 100%;
+		height: 490px;
+		position: relative;
+		background-color: cadetblue;
+	}
+
+	aside .div2 .banner {
+		list-style: none;
+		width: 500%;
+		height: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+
+	aside .div2 .banner li {
+		float: left;
+	}
+
+	aside .div2 .banner li a img {/*侧导航背景*/
+		/* width: 100%; */
+		height: 490px;
+	}
+	aside ol {/*侧导航栏背景图加载条*/
+		width: 50px;
+		height: 8px;
+		list-style: none;
+		background-color: rgba(46,46,46,0.7);
+		border-radius: 5px;
+		position: absolute;
+		left: 50%;
+		bottom: 20px;
+		transform: translateX(-50%);
+		padding: 2px;
+		padding-left: 15px;
+	}
+	aside .cycle li {
+		width: 8px;
+		height: 8px;
+		background-color: white;
+		border-radius: 50%;
+		float: left;
+		margin-right: 5px;
+	}
+
+	aside .cycle li:last-child {
+		margin-right: 0;
+	}
+	aside .current {
+    	background-color: red !important;
+	}
+
+
+
+	aside .div3 {/*购物头条*/
+		width: 100%;
+		height: 60px;
+		background-color: rgba(200,200,200,0.81);
+		position: relative;
+	}
+	aside .div3 .img1 {
+		margin-left: 140px;
+		position: absolute;
+		top: 20px;
+	}
+	aside .div3 .img2 {
+		margin-left: 170px;
+		position: relative;
+		top: -15px;
+		left: -5px;
+	}
+	aside .div3 .div3-1 {/*购物头条中间的盒子*/
+		display: inline-block;
+		width: 600px;
+		height: 60px;
+/*		background-color: cadetblue;*/
+		position: relative;
+		line-height: 60px;
+		left: 100px;
+		overflow: hidden;
+	}
+	
+	/*移动盒子文字*/
+	aside .div3 .ydhz1 {
+		width: 600px;
+		height: 300px;
+		animation: move 10s linear infinite backwards;
+		position: relative;
+	}
+
+	
+	aside .div3 .div3-1 a {
+		text-decoration: none;
+	}
+	aside .div3 .div3-1 a span {
+		position: absolute;
+		right: 20px;
+		color: black;
+	}
+	
+	/*字体向上动画*/
+	/* @keyframes move {
+            0% {
+                
+            }
+            100% {
+                transform: translateY(-300px);
+            }
+	}
+	aside .div3 .ydhz1:hover {
+		animation-play-state: paused;
+	}
+	aside .div3 .ydhz1 a span:hover {
+		color: red;
+	} */
+	aside .div3 .div3-2 {/*购物头条最后的img*/
+		background-color: red;
+		width: 100px;
+		height: 40px;
+		border-radius: 5px;
+		float: right;
+		margin-top: 10px;
+		margin-right: 130px;
+		text-align: center;
+		line-height: 40px;
+	}
+
+
+
+	section {/*内容主盒子*/
+		width: 80%;
+		height: 2864px;
+/*		background-color: cadetblue;*/
+		margin: 0 auto;
+		/* display: flex;
+		flex-flow: column nowrap; */
+	}
+	section .div1 {/*内容第一个盒子秒杀倒计时*/
+		width: 100%;
+		height: 60px;
+		background-color: red;
+		position: relative;
+		
+		/* display: flex;
+		justify-content: center;
+		flex-flow: row nowrap; */
+		
+	}
+	section .div1 .imgsj {
+		position: absolute;
+		top: 0;
+		left: 0;
+/*		background-color: white;*/
+		border: 3px solid transparent;
+ 		border-top-color: white;
+ 		border-left-color: white;
+	}
+	section .div1 .imgms {
+		position: absolute;
+		left: 250px;
+		top: 15px;
+	}
+	section .div1 .div1-1 {/*秒杀倒计时*/
+		/* display: flex; */
+/*		background-color: bisque;*/
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		font-size: 18px;
+		color: white;
+		top: 18px;
+	}
+	section .div1 .div1-1 div {
+		background-color: black;
+		width: 30px;
+		height: 25px;
+		text-align: center;
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+	section .div1 .div1-1 span {
+		margin-right: 10px;
+	}
+	section .div1 a {
+		text-decoration: none;
+		color: white;
+		position: absolute;
+		right: 50px;
+		top: 18px;
+		font-size: 13px;
+	}
+	section .div1 a .imgjt {
+		vertical-align: middle;
+		margin-left: 20px;
+	}
+
+
+
+
+
+	section .div2 {/*内容第二个盒子衣服*/
+		width: 100%;
+		height: 270px;
+/*		background-color: cornflowerblue;*/
+	}
+	section .div2 a {
+		width: 240px;
+		height: 240px;
+		display: inline-block;
+		margin-right: 9px;
+	}
+	section .div2 a span {
+		display: block;
+		height: 30px;
+		width: 240px;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		overflow: hidden;
+	}
+
+
+
+
+	section .div3 {/*内容盒子三*/
+		width: 100%;
+		height: 60px;
+/*		background-color: brown;*/
+	}
+	section .div3 .div3-1 {/*立即抢购盒子*/
+		width: 240px;
+		height: 60px;
+/*		background-color: aqua;*/
+		position: relative;
+		display: inline-block;
+		margin-right: 10px;
+	}
+	section .div3 .div3-1 .div3-1-1 {
+		width: 120px;
+		height: 40px;
+		background-color: white;
+		display: inline-block;
+		padding: 10px;
+	}
+	section .div3 .div3-1 .div3-1-1 .spscx {
+		color: rgba(175,175,175,1);
+		text-decoration: line-through;
+	}
+	section .div3 .div3-1 .div3-1-2 {/*立即抢购盒子*/
+		width: 100px;
+		height: 60px;
+		background-color: red;
+		display: inline-block;
+		position: absolute;
+		text-align: center;
+		line-height: 60px;
+		
+	}
+	section .div3 .div3-1 .div3-1-2 a {
+		text-decoration: none;
+		color: white;
+	}
+	section .div3 .div3-1 .div3-1-3 {
+		border: 60px solid transparent;
+		border-right: 30px solid red;
+		border-bottom: 0;
+		position: absolute;
+		top: 0;
+		right: 100px;
+	}
+	section .div3 .div3-2 {
+		margin-right: 0;
+	}
+
+
+
+
+
+	section .div4 {/*内容第四个盒子*/
+		width: 100%;
+		height: 330px;
+/*		background-color: antiquewhite;*/
+		margin-top: 30px;
+	}
+	section .div4 a {/*内容第四个盒子中的小盒子*/
+		width: 240px;
+		height: 330px;
+/*		background-color: coral;*/
+		display: inline-block;
+		background-image: url(channel_bg1.jpg);
+		background-repeat: round;
+		text-decoration: none;
+		color: white;
+		text-align: center;
+		position: relative;
+		margin-right: 10px;
+	}
+	section .div4 a h2 {
+		line-height: 50px;
+		margin-top: 10px
+	}
+	section .div4 a .div4-1 {
+		width: 150px;
+		height: 40px;
+		background-color: white;
+		color: black;
+		text-align: center;
+		line-height: 40px;
+		border-radius: 20px;
+		position: absolute;
+		left: 45px;
+		bottom: 20px;
+	}
+	section .div4 a img {
+		position: relative;
+		top: 20px;
+		transition: all 1s;
+	}
+	section .div4 a img:hover {
+		transform: scale(1.2);
+	}
+	section .div4 .a1 {
+		margin-right: 0px;
+		background-image: url(channel_bg2.jpg);
+	}
+
+
+
+
+	section .div5 {/*内容第五个盒子‘垂钓专场*/
+		width: 100%;
+		height: 60px;
+		background-color: blue;
+		margin-top: 20px;
+	}
+	section .div5 img {
+		width: 100%;
+		height: 100%;
+	}
+
+
+
+
+	section .div6 {/*内容大盒子六，'享品质 享生活'*/
+		width: 100%;
+		height: 440px;
+/*		background-color: chocolate;*/
+	}
+	section .div6 .div6-1 {
+		width: 100%;
+		height: 60px;
+/*		background-color: blueviolet;*/
+		text-align: center;
+		margin: 0 auto;
+		line-height: 60px;
+		margin-top: 20px;
+	}
+	section .div6 .div6-1 hr {/*虚线*/
+		width: 395px;
+		display: inline-block;
+		vertical-align: middle;
+		border: dashed;
+		color: rgba(172,172,172,1.00);
+	}
+	section .div6 .div6-1 h2 {
+		display: inline-block;
+		margin-left: 30px;
+		margin-right: 30px;
+	}
+	section .div6 .div6-2 {/*第六个大盒子里的第二个小盒子*/
+		width: 100%;
+		height: 170px;
+/*		background-color: darkgrey;*/
+		margin-top: 20px;
+	}
+	section .div6 .div6-2 a {
+		text-decoration: none;
+		display: inline-block;
+		width: 320px;
+		height: 170px;
+		background-color: red;
+		overflow: hidden;
+		position: relative;
+		margin-right: 20px;
+	}
+	section .div6 .div6-2 a img {
+		width: 100%;
+		height: 100%;
+		transform: translateX(20px);
+		transition: all 1s;
+	}
+	section .div6 .div6-2 a .div6-2-1 {
+		width: 150px;
+		height: 100%;
+		background-color: rgba(0,82,50,1.00);
+		position: absolute;
+		text-align: center;
+		color: white;
+		z-index: 10;
+	}
+	section .div6 .div6-2 a .div6-2-1 hr {
+		width: 120px;
+		margin: 10px;
+	}
+	section .div6 .div6-2 a .div6-2-1 p {
+		font-size: 14px;
+		margin-top: 20px;
+	}
+	section .div6 .div6-2 a img:hover {
+		transform: translateX(40px);
+	}
+	section .div6 .div6-2 .a1 {
+		margin-right: 0px;
+		background-color: rgba(73,90,0,1.00);
+	}
+	section .div6 .div6-2 .a2 {
+		background-color: rgba(136,85,0,1.00);
+	}
+	section .div6 .div6-2 a .div6-2-2{
+		background-color: rgba(126,101,0,1.00);
+	}
+	section .div6 .div6-2 a .div6-2-3{
+		background-color: rgba(0,123,212,1.00);
+	}
+
+
+
+
+	section .div7 {/*内容大盒子七，'达人专区'*/
+		width: 100%;
+		height: 180px;
+/*		background-color: chocolate;*/
+		
+	}
+	section .div7 .div7-1 {
+		width: 100%;
+		height: 60px;
+/*		background-color: blueviolet;*/
+		text-align: center;
+		margin: 0 auto;
+		line-height: 60px;
+		margin-top: 20px;
+	}
+	section .div7 .div7-1 hr {/*虚线*/
+		width: 395px;
+		display: inline-block;
+		vertical-align: middle;
+		border: dashed;
+		color: rgba(172,172,172,1.00);
+	}
+	section .div7 .div7-1 h2 {
+		display: inline-block;
+		margin-left: 30px;
+		margin-right: 30px;
+	}
+	section .div7 a {
+		width: 232px;
+		height: 120px;
+		display: inline-block;
+		background-color: blueviolet;
+		margin: 0 auto;
+		text-decoration: none;
+		position: relative;
+		color: white;
+		margin-right: 20px;
+	}
+	section .div7 a h3 {
+		display: inline-block;
+		margin-bottom: 10px;
+	}
+	section .div7 a .div7-2 {
+		width: 100px;
+		height: 100%;
+/*		background-color: darkgreen;*/
+		position: absolute;
+		top: 0;
+		left: 10px;
+		text-align: center;
+		display: inline-block;
+	}
+	section .div7 a .div7-2 div{
+		width: 70px;
+		height: 25px;
+		background-color: aliceblue;
+		text-align: center;
+		line-height: 25px;
+		display: inline-block;
+		border-radius: 15px;
+		margin-top: 30px;
+		color: rgba(133,224,246,1.00);
+	}
+	section .div7 a .div7-2 .div7-2-1 {
+		color: rgba(220,156,157,1.00);
+	}
+	section .div7 a .img1 {
+		position: absolute;
+		top: 30px;
+		right: 15px;
+		transition: all 1s;
+	}
+	section .div7 a .img1:hover {
+		transform: translateX(-15px);
+	}
+	section .div7 a .div7-2 div:hover {
+		color: red;
+	}
+	section .div7 .a7 {
+		margin-right: 0px;
+	}
+	
+
+
+
+
+
+	section .div8 {/*内容大盒子八，'店铺推荐'*/
+		width: 100%;
+		height: 462px;
+/*		background-color: chocolate;*/
+	}
+	section .div8 .div8-1 {
+		width: 100%;
+		height: 60px;
+/*		background-color: blueviolet;*/
+		text-align: center;
+		margin: 0 auto;
+		line-height: 60px;
+		margin-top: 20px;
+	}
+	section .div8 .div8-1 hr {/*虚线*/
+		width: 395px;
+		display: inline-block;
+		vertical-align: middle;
+		border: dashed;
+		color: rgba(172,172,172,1.00);
+	}
+	section .div8 .div8-1 h2 {
+		display: inline-block;
+		margin-left: 30px;
+		margin-right: 30px;
+	}
+	section .div8 .div8-2 {/*商品盒子*/
+		width: 239px;
+		height: 400px;
+		background-color: darkgreen;
+		position: relative;
+		border: 1px solid red;
+		margin-right: 10px;
+		display: inline-block;
+	}
+	section .div8 .div8-2 a {
+		text-decoration: none;
+		color: black;
+	}
+	section .div8 .div8-2 a .img8 {
+		width: 100%;
+		height: 300px;
+		vertical-align: bottom;
+	}
+	section .div8 .div8-2 a div {
+		width: 100%;
+		height: 100px;
+		background-color: rgba(211,211,211,1.00);
+		position: relative;
+	}
+	section .div8 .div8-2 a div img {
+		position: absolute;
+		top: 20px;
+		left: 10px;
+	}
+	section .div8 .div8-2 a div .p1 {
+		display: inline-block;
+		position: absolute;
+		top: 20px;
+		left: 150px;
+	} 
+	section .div8 .div8-2 a div .p2 {
+		display: inline-block;
+		position: absolute;
+		top: 50px;
+		left: 150px;
+	} 
+	section .div8 .div8-2 .div8-2y {
+		width: 100%;
+		height: 100%;
+		background-color: rgba(197,197,197,0.48);
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: none;
+	}
+	section .div8 .div8-2:hover .div8-2y{
+			display: block;
+	}
+	section .div8 .div8-2-1 {
+		margin-right: 0;
+	}
+
+
+
+
+	section .div9 {/*内容大盒子九，'品牌推荐'*/
+		width: 100%;
+		height: 238px;
+/*		background-color: chocolate;*/
+	}
+	section .div9 .div9-1 {
+		width: 100%;
+		height: 60px;
+/*		background-color: blueviolet;*/
+		text-align: center;
+		margin: 0 auto;
+		line-height: 60px;
+		margin-top: 20px;
+	}
+	section .div9 .div9-1 hr {/*虚线*/
+		width: 395px;
+		display: inline-block;
+		vertical-align: middle;
+		border: dashed;
+		color: rgba(172,172,172,1.00);
+	}
+	section .div9 .div9-1 h2 {
+		display: inline-block;
+		margin-left: 30px;
+		margin-right: 30px;
+	}
+	section .div9 .div9-2 {/*内容第九个盒子中左边的盒子*/
+		width: 360px;
+		height: 178px;
+		background-color: red;
+		overflow: hidden;
+		display: inline-block;
+	}
+	section .div9 .div9-2 a {
+		text-decoration: none;
+	}
+	section .div9 .div9-2 a img {
+		width: 110%;
+		height: 100%;
+		transition: all 1s;
+	}
+	section .div9 .div9-2 a img:hover {
+		transform: translateX(-20px);
+	}
+	section .div9 .div9-3 {/*内容第九个盒子中右边的盒子*/
+		width: 630px;
+		height: 178px;
+/*		background-color: red;*/
+		/* display: inline-block; */
+		float: right;
+	}
+	section .div9 .div9-3 .div9-3-1 {
+		width: 100%;
+		height: 60px;
+		background-color: rgba(195,195,195,1.00);
+		font-size: 0;
+	}
+	section .div9 .div9-3  .div-3-2 {
+		margin-top: -1px;
+	}
+	section .div9 .div9-3 .div9-3-1 .div-1-1 {
+		width: 104px;
+		height: 58px;
+		border: 1px solid rgba(249,249,249,1.00);
+		text-align: center;
+		position: relative;
+		display: inline-block;
+		font-size: 16px;
+		margin-left: -1px;
+	}
+	section .div9 .div9-3 .div9-3-1 .div-1-1 img {
+		width: 80%;
+		height: 80%;
+		margin-top: 6px;
+	}
+	section .div9 .div9-3 .div9-3-1 .div-1-2 a {
+		text-decoration: none;
+		color: aliceblue;
+	}
+	section .div9 .div9-3 .div9-3-1 .div-1-2 {
+		width: 100%;
+		height: 100%;
+		background-color: rgba(119,119,119,0.8);
+		text-align: center;
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: none;
+	}
+	section .div9 .div9-3 .div9-3-1 .div-1-2 .span9 {
+		margin-top: 10px;
+		display: block;
+	}
+	section .div9 .div9-3 .div9-3-1 .div-1-1:hover .div-1-2{
+		display: block;
+	}
+
+
+
+
+	section .div10 {/*内容大盒子十，'还没逛够'*/
+		width: 100%;
+		height: 614px;
+/*		background-color: chocolate;*/
+	}
+	section .div10 .div10-1 {
+		width: 100%;
+		height: 60px;
+/*		background-color: blueviolet;*/
+		text-align: center;
+		margin: 0 auto;
+		line-height: 60px;
+		margin-top: 20px;
+	}
+	section .div10 .div10-1 hr {/*虚线*/
+		width: 395px;
+		display: inline-block;
+		vertical-align: middle;
+		border: dashed;
+		color: rgba(172,172,172,1.00);
+	}
+	section .div10 .div10-1 h2 {
+		display: inline-block;
+		margin-left: 30px;
+		margin-right: 30px;
+	}
+	section .div10 .div10-2 {/*商品盒子*/
+		width: 166px;
+		height: 250px;
+/*		background-color: darkgreen;*/
+		position: relative;
+		border: 1px solid rgba(152,56,0,1.00);
+		margin-right: 10px;
+		display: inline-block;
+		padding: 10px;
+	}
+	section .div10 .div10-12 {
+		margin-top: 10px;
+	}
+	section .div10 .div10-2 a {
+		text-decoration: none;
+		color: red;
+	}
+	section .div10 .div10-2 a .img10 {
+		width: 100%;
+		height: 200px;
+		vertical-align: bottom;
+	}
+	section .div10 .div10-2 a span {
+		color: black;
+		width: 100%;
+		display: block;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		margin: 5px -9px;
+		font-size: 15px;
+	}
+	section .div10 .div10-2 .div10-2y {
+		width: 100%;
+		height: 100%;
+		background-color: rgba(197,197,197,0.48);
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: none;
+	}
+	section .div10 .div10-2:hover .div10-2y{
+		display: block;
+	}
+	section .div10 .div10-2:hover {
+		border-color: red;
+	}
+/*	网页尾部*/
+	footer {
+		width: 100%;
+		height: 200px;
+		background-color: black;
+		margin-top: 30px;
+		color: white;
+		position: relative;
+	}
+	footer .div1 {
+		width: 1000px;
+		height: 150px;;
+/*		background-color: chocolate;*/
+		line-height: 30px;
+		position: absolute;
+		top: 25px;
+		left: 130px;
+	}
+	footer .div1 .div1-1 {
+		width: 150px;
+		height: 150px;;
+/*		background-color: red;*/
+		line-height: 30px;
+		display: inline-block;
+		margin-right: 10px;
+	}
+	footer a {
+		text-decoration: none;
+		color: rgba(132,128,128,1.00);
+		font-size: 15px;
+	}
+	footer .div1 .div1-1 a ul {
+		list-style: none;
+	}
+	footer .div1 .div1-2 {
+		position: absolute;
+	}
+	footer .div1 .div1-2 img{
+		margin-top: 10px;
+	}
+	footer .div1 .div1-1 a ul li:hover {
+		color: red;
+	}
+	footer .div2 {/*抢红包*/
+		width: 165px;
+		height: 220px;
+/*		background-color: antiquewhite;*/
+		box-sizing: border-box;
+		position: fixed;
+		right: 30px;
+		bottom: 80px;
+	}
+	footer .div2 .div2-1 {
+		width: 18px;
+		height: 18px;
+		background-color: red;
+		line-height: 18px;
+		text-align: center;
+		border-radius: 50%;
+		float: right;
+	}
+	
+
+	footer .div2 .div2-1 {
+		cursor: pointer;
+	}

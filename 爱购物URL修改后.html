@@ -1,0 +1,1247 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>爱购物URL</title>
+<link href="爱购物URL.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="font/iconfont.css">
+<style>
+	aside .div1 .div1-2 .div1-2y {
+		width: 650px;
+		height: 490px;
+		background-color: rgba(217,217,217,1.00);
+		position: absolute;
+		left: 250px;
+		display: none;
+	}
+	aside .div1 .div1-2:hover .div1-2y {
+		display: block;
+	}
+	aside .div1 .div1-2 .div1-2y .div2y-1 {
+		width: 600px;
+		height: 30px;
+		margin-top: 15px;
+		margin-left: 20px;
+	}
+	aside .div1 .div1-2 .div1-2y .div2y-1 span {
+		background-color: rgba(142,142,142,1.00);
+		margin: 5px;
+	}
+	aside .div1 .div1-2 .div1-2y .div2y-2 {
+		width: 600px;
+		height: 30px;
+		margin-left: 20px;
+	}
+	aside .div1 .div1-2 .div1-2y .div2y-2 .ycid {
+		width: 600px;
+		height: 30px;
+		margin-left: 20px;
+		list-style: none;
+/*		background-color: blueviolet;*/
+		position: relative;
+		top: -10px;
+		left: -20px;
+	}
+	aside .div1 .div1-2 .div1-2y .div2y-2 .ycid li {
+		display: inline-block;
+		color: black;
+		
+	}
+	.div2y-2 hr {
+		position: absolute;
+		width: 560px;
+		top: 40px;
+		left: 20px;
+		border: 1px dashed rgba(160,160,160,1.00);
+	}
+/*	第三行*/
+	aside .div1 .div1-2 .div1-2y .div2y-3 {
+		width: 600px;
+		height: 60px;
+		margin-left: 20px;
+	}
+	aside .div1 .div1-2 .div1-2y .div2y-3 .ycid {
+		width: 600px;
+		height: 60px;
+		margin-top: 5px;
+		margin-left: 20px;
+		list-style: none;
+/*		background-color: blueviolet;*/
+		position: relative;
+		top: -10px;
+		left: -20px;
+	}
+	aside .div1 .div1-2 .div1-2y .div2y-3 .ycid li {
+		display: inline-block;
+		color: rgba(138,138,138,1.00);
+		
+	}
+	.div2y-3 hr {
+		position: absolute;
+		width: 560px;
+		top: 65px;
+		left: 20px;
+		border: 1px dashed rgba(160,160,160,1.00);
+	}
+	aside .div1 .div1-2 .div1-2y .div2y-3 .ycid .suojin {
+		text-indent:2em
+	}
+	aside .div1 .div1-2 .div1-2y .div2y-3 .ycid a .heise {
+		color: black;
+	}
+	aside .div1 .div1-2 .div1-2y a .ycli1:hover {
+		color: red;
+	}
+	
+/*	衣服放大*/
+	
+	section .div2 a img {
+		transition: all 1s;
+		width: 100%;
+		height: 100%;
+	}
+	section .div2 a img:hover {
+		transform: scale(1.1);
+	}
+	section .div2 a .yffd {
+		width: 240px;
+		height: 240px;
+		overflow: hidden;
+	}
+
+/* js城市定位 */
+.dr {
+        width: 400px;
+        height: 30px;
+        border: 1px black solid;
+        border-collapse: collapse;
+    }
+    .dwth th {
+        border: 1px dimgrey solid;
+        font-weight: normal;
+        cursor: pointer;
+    }
+
+    .dwcs {
+        width: 400px;
+        height: 30px;
+        margin: 10px;
+		display: none;
+    }
+	.xs {
+		display: block;
+	}
+    .dwcs li {
+        line-height: 30px;
+        list-style: none;
+        position: relative;
+		left: 30px;
+        padding-right: 60px;
+        cursor: pointer;
+        display: inline-block;
+    }
+
+    .dw {
+        width: 400px;
+        height: 200px;
+        /* border: 1px black solid; */
+        background-color: white;
+		position: relative;
+		left: 150px;
+		display: none;
+		z-index: 9999999;
+    }
+
+    .rmcs {
+        background-color: red;
+        z-index: 888;
+    }
+
+
+</style>
+</head>
+
+<body>
+	<header>
+		<span>X</span>
+		<img src="active.jpg" alt="" class="imgs">
+	</header>
+	<nav>
+		<div class="div1">
+			<span class="span1">
+				<span class="iconfont icon-dingwei"></span>
+				<input type="text" style="outline: none; width: 50px; text-align: center;" placeholder="北京" id="dingwei">
+			</span>
+			<div class="dw">
+				<input type="text" style="width: 400px; height: 30px; outline: none; border: 0px;" placeholder="热门城市(支持汉子/拼音搜索)">
+				<table class="dr">
+					<tr class="dwth">
+						<th class="rmcs">热门城市</th>
+						<th>abcdsdasa</th>
+						<th>abcdsdasa</th>
+						<th>abcdsdasa</th>
+					</tr>
+					
+				</table>
+				<ul class="dwcs xs">
+						<li>北京</li>
+						<li>上海</li>
+						<li>重庆</li>
+						<li>深圳</li>
+						<li>杭州</li>
+						<li>武汉</li>
+						<li>西安</li>
+						<li>天津</li>
+						<li>南京</li>
+						<li>上海</li>
+						<li>重庆</li>
+						<li>深圳</li>
+						<li>北京</li>
+						<li>上海</li>
+						<li>重庆</li>
+						<li>深圳</li>
+				</ul>
+				<ul class="dwcs">
+					<li>5京</li>
+					<li>5海</li>
+					<li>重庆</li>
+					<li>56</li>
+					<li>5州</li>
+					<li>5汉</li>
+					<li>西安</li>
+					<li>天津</li>
+					<li>5京</li>
+					<li>5海</li>
+					<li>重5庆</li>
+					<li>5圳</li>
+					<li>北京</li>
+					<li>5海</li>
+					<li>5庆</li>
+					<li>5圳</li>
+			</ul>
+				<ul class="dwcs">
+					<li>1q</li>
+					<li>11</li>
+					<li>11</li>
+					<li>11</li>
+					<li>1州</li>
+					<li>1汉</li>
+					<li>1安</li>
+					<li>1津</li>
+					<li>2京</li>
+					<li>上海</li>
+					<li>重庆</li>
+					<li>1圳</li>
+					<li>北京</li>
+					<li>1海</li>
+					<li>1庆</li>
+					<li>1圳</li>
+				</ul>
+				<ul class="dwcs">
+					<li>2京</li>
+					<li>上海</li>
+					<li>2庆</li>
+					<li>深圳</li>
+					<li>2州</li>
+					<li>2汉</li>
+					<li>2安</li>
+					<li>2津</li>
+					<li>南京</li>
+					<li>2海</li>
+					<li>重庆</li>
+					<li>2圳</li>
+					<li>2京</li>
+					<li>2海</li>
+					<li>2庆</li>
+					<li>2圳</li>
+				</ul>
+			</div>
+			<div class="div1-1">
+				<a href="爱购物的登录界面.html" class="a1">请登录</a>
+				<a href="注册账户.html">免费注册</a>
+			</div>
+			<div class="div1-2">
+				<a href="#" class="a2">我的订单</a>
+				<span>丨</span>
+				<a href="#">我的浏览</a>
+				<span>丨</span>
+				<a href="#">我的收藏</a>
+				<span>丨</span>
+				<a href="#">客服服务</a>
+				<span>丨</span>
+				<a href="#">网站导航</a>
+			</div>
+		</div>
+		<div class="div2">
+			<a href="#">
+				<img src="logo.png" alt="">
+			</a>	
+			<a href="#">
+				<img src="ecsc-join.gif" alt="">
+			</a>
+			<input type="search">
+			<input type="submit" value="搜索商品">
+			<input type="submit" value="搜店铺">
+		</div>
+		<div class="div3">
+			<div class="div3-1">
+				<a href="#">首页</a>
+				<a href="#">食品特产</a>
+				<a href="#">服装城</a>
+				<a href="#">大家电</a>
+				<a href="#">鞋靴箱包</a>
+				<a href="#">品牌专区</a>
+				<a href="#">聚划算</a>
+				<a href="#">积分商城</a>
+				<a href="#">预售</a>
+				<a href="#">店铺街</a>
+			</div>
+		</div>
+	</nav>
+	<aside>
+		<div class="div1">
+			<div class="div1-1">全部商品分类</div>
+			<div class="div1-2">
+				<a href="#">
+					<img src="elece.png">
+					<span class="sp1">家用电器</span><br>
+					<span class="sp2">大家电</span>
+					<span>生活电器</span>
+				</a>
+				<div class="div1-2y">
+					<div class="div2y-1">
+						<span>品牌日</span>
+						<span>家电城</span>
+						<span>智能生活馆</span>
+						<span>京东净化馆</span>
+						<span>京东帮服务店</span>
+						<span>值得买精选</span>
+					</div>
+					<div class="div2y-2">
+						<ul class="ycid">
+							<a href="#">
+								<li class="ycli1">大家电</li>
+								<li>丨</li>
+								<li class="ycli1">平板电视</li>
+								<li>丨</li>
+								<li class="ycli1">空调</li>
+								<li>丨</li>
+								<li class="ycli1">冰箱</li>
+								<li>丨</li>
+								<li class="ycli1">洗衣机</li>
+								<li>丨</li>
+								<li class="ycli1">家庭影视</li>
+								<li>丨</li>
+								<li class="ycli1">DVD</li>
+								<li>丨</li>
+								<li class="ycli1">热水器</li>
+								<li>丨</li>
+							</a>
+							<hr>
+						</ul>
+					</div>
+					<div class="div2y-3">
+						<ul class="ycid">
+							<a href="#">
+								<li class="ycli1 heise">厨房电器</li>
+								<li>丨</li>
+								<li class="ycli1">电风扇</li>
+								<li>丨</li>
+								<li class="ycli1">空调</li>
+								<li>丨</li>
+								<li class="ycli1">冰箱</li>
+								<li>丨</li>
+								<li class="ycli1">洗衣机</li>
+								<li>丨</li>
+								<li class="ycli1">家庭影视</li>
+								<li>丨</li>
+								<li class="ycli1">DVD</li>
+								<li>丨</li>
+								<li class="ycli1">热水器</li>
+								<li>丨</li>
+								<li class="ycli1">空调</li>
+								<li>丨</li>
+								<li class="ycli1">冰箱</li>
+								<li class="suojin">丨</li>
+								<li class="ycli1">洗衣机</li>
+								<li>丨</li>
+								<li class="ycli1">家庭影视</li>
+								<li>丨</li>
+								<li class="ycli1">DVD</li>
+								<li>丨</li>
+								<li class="ycli1">热水器</li>
+								<li>丨</li>
+							</a>
+							<hr>
+						</ul>
+					</div>
+					<div class="div2y-3">
+						<ul class="ycid">
+							<a href="#">
+								<li class="ycli1 heise">个人健康</li>
+								<li>丨</li>
+								<li class="ycli1">按摩椅</li>
+								<li>丨</li>
+								<li class="ycli1">剃须刀</li>
+								<li>丨</li>
+								<li class="ycli1">冰箱</li>
+								<li>丨</li>
+								<li class="ycli1">洗衣机</li>
+								<li>丨</li>
+								<li class="ycli1">家庭影视</li>
+								<li>丨</li>
+								<li class="ycli1">DVD</li>
+								<li>丨</li>
+								<li class="ycli1">热水器</li>
+								<li>丨</li>
+								<li class="ycli1">空调</li>
+								<li>丨</li>
+								<li class="ycli1">冰箱</li>
+								<li class="suojin">丨</li>
+								<li class="ycli1">洗衣机</li>
+								<li>丨</li>
+								<li class="ycli1">家庭影视</li>
+								<li>丨</li>
+								<li class="ycli1">DVD</li>
+								<li>丨</li>
+								<li class="ycli1">热水器</li>
+								<li>丨</li>
+							</a>
+							<hr>
+						</ul>
+					</div>
+					<div class="div2y-3">
+						<ul class="ycid">
+							<a href="#">
+								<li class="ycli1 heise">五金</li>
+								<li>丨</li>
+								<li class="ycli1">电动工具</li>
+								<li>丨</li>
+								<li class="ycli1">手动工具</li>
+								<li>丨</li>
+								<li class="ycli1">仪器</li>
+								<li>丨</li>
+								<li class="ycli1">洗衣机</li>
+								<li>丨</li>
+								<li class="ycli1">家庭影视</li>
+								<li>丨</li>
+								<li class="ycli1">DVD</li>
+								<li>丨</li>
+								<li class="ycli1">热水器</li>
+								<li>丨</li>
+								<li class="ycli1">空调</li>
+								<li>丨</li>
+								<li class="ycli1">冰箱</li>
+								<li class="suojin">丨</li>
+								<li class="ycli1">洗衣机</li>
+								<li>丨</li>
+								<li class="ycli1">家庭影视</li>
+								<li>丨</li>
+								<li class="ycli1">DVD</li>
+								<li>丨</li>
+								<li class="ycli1">热水器</li>
+								<li>丨</li>
+							</a>
+							<hr>
+						</ul>
+					</div>
+					<div class="div2y-3">
+						<ul class="ycid">
+							<a href="#">
+								<li class="ycli1 heise">大家电</li>
+								<li>丨</li>
+								<li class="ycli1">平板电视</li>
+								<li>丨</li>
+								<li class="ycli1">空调</li>
+								<li>丨</li>
+								<li class="ycli1">冰箱</li>
+								<li>丨</li>
+								<li class="ycli1">洗衣机</li>
+								<li>丨</li>
+								<li class="ycli1">家庭影视</li>
+								<li>丨</li>
+								<li class="ycli1">DVD</li>
+								<li>丨</li>
+								<li class="ycli1">热水器</li>
+								<li>丨</li>
+								<li class="ycli1">空调</li>
+								<li>丨</li>
+								<li class="ycli1">冰箱</li>
+								<li class="suojin">丨</li>
+								<li class="ycli1">洗衣机</li>
+								<li>丨</li>
+								<li class="ycli1">家庭影视</li>
+								<li>丨</li>
+								<li class="ycli1">DVD</li>
+								<li>丨</li>
+								<li class="ycli1">热水器</li>
+								<li>丨</li>
+							</a>
+							<hr>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="div1-2">
+				<a href="#">
+					<img src="phone.png" alt="">
+					<span class="sp1">手机、</span>
+					<span class="sp1">数码、</span>
+					<span class="sp1">通信</span><br>
+					<span class="sp2">智能设备</span>
+					<span>数码配件</span>
+				</a>
+			</div>
+			<div class="div1-2">
+				<a href="#">
+					<img src="elec.png" alt="">
+					<span class="sp1">电脑、</span>
+					<span class="sp1">办公</span><br>
+					<span class="sp2">服务产品</span>
+					<span>电脑整机</span>
+				</a>
+			</div>
+			<div class="div1-2">
+				<a href="#">
+					<img src="home.png" alt="">
+					<span class="sp1">家居、</span>
+					<span class="sp1">家具、</span>
+					<span class="sp1">家装、</span><br>
+					<span class="sp2">厨具</span>
+					<span>家装建材</span>
+				</a>
+			</div>
+			<div class="div1-2">
+				<a href="#">
+					<img src="short.png" alt="">
+					<span class="sp1">男装、</span>
+					<span class="sp1">女装、</span>
+					<span class="sp1">内衣</span><br>
+					<span class="sp2">女装</span>
+					<span>男装</span>
+				</a>
+			</div>
+			<div class="div1-2">
+				<a href="#">
+					<img src="sport.png" alt="">
+					<span class="sp1">鞋靴、</span>
+					<span class="sp1">箱包、</span>
+					<span class="sp1">奢侈品、</span><br>
+					<span class="sp2">奢侈品</span>
+					<span>功能箱包</span>
+				</a>
+			</div>
+			<div class="div1-2">
+				<a href="#">
+					<img src="packge.png" alt="">
+					<span class="sp1">个人化妆</span><br>
+					<span class="sp2">清洁用品</span>
+					<span>洗发护发</span>
+				</a>
+			</div>
+		</div>
+		<div class="div2">
+		<ul class="banner">
+			<li>
+				<a>
+					<img src="banner4.jpg" alt="">
+				</a>
+			</li>
+			<li>
+				<a>
+					<img src="banner4.jpg" alt="">
+				</a>
+			</li>
+			<li>
+				<a>
+					<img src="banner4.jpg" alt="">
+				</a>
+			</li>
+			</ul>
+				<ol class="cycle">
+			</ol>
+		</div>
+		<div class="div3">
+			<img src="new1.png" class="img1">
+			<img src="new3.png" class="img2">
+			<div class="div3-1">
+				<div class="ydhz1">
+					<span>穿这样的裙子会显高,你穿过几种?</span>
+					<a href="#">
+						<span>点我查看详情</span>
+					</a><br>
+					<span>天府大件运营中心开仓公告</span>
+					<a href="#">
+						<span>点我查看详情</span>
+					</a><br>
+					<span> 小米：58秒售罄！魅族：抱歉，我30秒</span>
+					<a href="#">
+						<span>点我查看详情</span>
+					</a><br><br>
+					<span>五星双人自助低至299元</span>
+					<a href="#">
+						<span>点我查看详情</span>
+					</a><br>
+				</div>
+			</div>
+			<div class="div3-2">
+				<img src="new_more.png" alt="">
+			</div>
+		</div>
+	</aside>
+	<section>
+		<div class="div1">
+			<img src="box_hd_arrow.png" class="imgsj">
+			<img src="seckill.png" class="imgms">
+			<div class="div1-1">
+				<span>距结束</span>
+				<div class="h">00</div>时
+				<div class="m">00</div>分
+				<div class="s">00</div>秒
+			</div>
+				<a href="#">
+					<span>更多秒杀</span>
+					<img src="right_arrow (1).png" class="imgjt">
+				</a>
+		</div>
+		<div class="div2">
+			<a>
+				<div class="yffd">
+					<img src="miaosha0.jpg">
+				</div>
+				<span>
+					HLA/海澜之家撞色长袖T恤春季热卖圆领修身拼接T恤男 简约圆领 微弹修身 撞色拼接 触感柔软
+				</span>
+			</a>
+			<a>
+				<div class="yffd">
+					<img src="miaosha0.jpg">
+				</div>
+				<span>
+					HLA/海澜之家撞色长袖T恤春季热卖圆领修身拼接T恤男 简约圆领 微弹修身 撞色拼接 触感柔软
+				</span>
+			</a>
+			<a>
+				<div class="yffd">
+					<img src="miaosha0.jpg">
+				</div>
+				<span>
+					HLA/海澜之家撞色长袖T恤春季热卖圆领修身拼接T恤男 简约圆领 微弹修身 撞色拼接 触感柔软
+				</span>
+			</a>
+			<a>
+				<div class="yffd">
+					<img src="miaosha0.jpg">
+				</div>
+				<span>
+					HLA/海澜之家撞色长袖T恤春季热卖圆领修身拼接T恤男 简约圆领 微弹修身 撞色拼接 触感柔软
+				</span>
+			</a>
+		</div>
+		<div class="div3">
+			<div class="div3-1">
+				<div class="div3-1-1">
+					<span>&yen;356.00</span><br>
+					<span class="spscx">&yen;117.00</span>
+				</div>
+				<div class="div3-1-2">
+					<a href="#">立即抢购</a>
+				</div>
+				<div class="div3-1-3"></div>
+			</div>
+			<div class="div3-1">
+				<div class="div3-1-1">
+					<span>&yen;356.00</span><br>
+					<span class="spscx">&yen;117.00</span>
+				</div>
+				<div class="div3-1-2">
+					<a href="#">立即抢购</a>
+				</div>
+				<div class="div3-1-3"></div>
+			</div>
+			<div class="div3-1">
+				<div class="div3-1-1">
+					<span>&yen;356.00</span><br>
+					<span class="spscx">&yen;117.00</span>
+				</div>
+				<div class="div3-1-2">
+					<a href="#">立即抢购</a>
+				</div>
+				<div class="div3-1-3"></div>
+			</div>
+			<div class="div3-1 div3-2">
+				<div class="div3-1-1">
+					<span>&yen;356.00</span><br>
+					<span class="spscx">&yen;117.00</span>
+				</div>
+				<div class="div3-1-2">
+					<a href="#">立即抢购</a>
+				</div>
+				<div class="div3-1-3"></div>
+			</div>
+		</div>
+		<div class="div4">
+			<a href="#">
+				<h2>优质新品</h2>
+				<p>专注生活美学</p>
+				<img src="channel.png" alt="">
+				<div class="div4-1">去看看</div>
+			</a>
+			<a href="#" class="a1">
+				<h2>优质新品</h2>
+				<p>专注生活美学</p>
+				<img src="channel.png" alt="">
+				<div class="div4-1">去看看</div>
+			</a>
+			<a href="#">
+				<h2>优质新品</h2>
+				<p>专注生活美学</p>
+				<img src="channel.png" alt="">
+				<div class="div4-1">去看看</div>
+			</a>
+			<a href="#" class="a1">
+				<h2>优质新品</h2>
+				<p>专注生活美学</p>
+				<img src="channel.png" alt="">
+				<div class="div4-1">去看看</div>
+			</a>
+		</div>
+		<div class="div5">
+			<img src="discount1.png">
+		</div>
+		<div class="div6">
+			<div class="div6-1">
+				<hr><h2>享品质 享生活</h2><hr>
+			</div>
+			<div class="div6-2">
+				<a href="#">
+					<div class="div6-2-1">
+						<hr><h3>新品首发</h3><hr>
+						<p>荣耀系列 今日特惠</p>
+					</div>
+					<img src="enjoy1.png">
+				</a>
+				<a href="#">
+					<div class="div6-2-1 div6-2-2">
+						<hr><h3>新品首发</h3><hr>
+						<p>荣耀系列 今日特惠</p>
+					</div>
+					<img src="enjoy2.jpg">
+				</a>
+				<a href="#" class="a1">
+					<div class="div6-2-1 div6-2-3">
+						<hr><h3>新品首发</h3><hr>
+						<p>荣耀系列 今日特惠</p>
+					</div>
+					<img src="enjoy1.png">
+				</a>
+			</div>
+			<div class="div6-2">
+				<a href="#">
+					<div class="div6-2-1">
+						<hr><h3>智能生活</h3><hr>
+						<p>智能潮货，嗨购不停</p>
+					</div>
+					<img src="enjoy4.jpg">
+				</a>
+				<a href="#">
+					<div class="div6-2-1 div6-2-2">
+						<hr><h3>新品首发</h3><hr>
+						<p>荣耀系列 今日特惠</p>
+					</div>
+					<img src="enjoy5.jpg">
+				</a>
+				<a href="#" class="a1">
+					<div class="div6-2-1 div6-2-3">
+						<hr><h3>新品首发</h3><hr>
+						<p>荣耀系列 今日特惠</p>
+					</div>
+					<img src="enjoy2.jpg">
+				</a>
+			</div>
+		</div>
+		
+		<div class="div7">
+			<div class="div7-1">
+				<hr><h2>达人专区</h2><hr>
+			</div>
+			<a href="#">
+				<img src="vip1.jpg">
+				<div class="div7-2">
+					<h3>纯棉质品</h3>
+					<p>把好货带回家</p>
+					<div>去见识</div>
+				</div>
+				<img src="vip_shop1.png" class="img1">
+			</a>
+			<a href="#">
+				<img src="vip2.jpg">
+				<div class="div7-2">
+					<h3>纯棉质品</h3>
+					<p>把好货带回家</p>
+					<div class="div7-2-1">去见识</div>
+				</div>
+				<img src="vip_shop2.png" class="img1">
+			</a>
+			<a href="#">
+				<img src="vip1.jpg">
+				<div class="div7-2">
+					<h3>纯棉质品</h3>
+					<p>把好货带回家</p>
+					<div>去见识</div>
+				</div>
+				<img src="vip_shop3.png" class="img1">
+			</a>
+			<a href="#" class="a7">
+				<img src="vip2.jpg">
+				<div class="div7-2">
+					<h3>纯棉质品</h3>
+					<p>把好货带回家</p>
+					<div class="div7-2-1">去见识</div>
+				</div>
+				<img src="vip_shop1.png" class="img1">
+			</a>
+		</div>
+		<div class="div8">
+			<div class="div8-1">
+				<hr><h2>店铺推荐</h2><hr>
+			</div>
+			<div class="div8-2">
+				<a href="#">
+					<img src="good_shop1.png" class="img8">
+					<div>
+						<img src="shop_logo.png">
+						<p class="p1">美宝莲</p>
+						<p class="p2">纽约高街潮妆</p>
+					</div>
+					<div class="div8-2y"></div>
+				</a>
+			</div>
+			<div class="div8-2">
+				<a href="#">
+					<img src="good_shop2.png" class="img8">
+					<div>
+						<img src="shop_logo1.png">
+						<p class="p1">美宝莲</p>
+						<p class="p2">纽约高街潮妆</p>
+					</div>
+					<div class="div8-2y"></div>
+				</a>
+			</div>
+			<div class="div8-2">
+				<a href="#">
+					<img src="good_shop2.png" class="img8">
+					<div>
+						<img src="shop_logo1.png">
+						<p class="p1">美宝莲</p>
+						<p class="p2">纽约高街潮妆</p>
+					</div>
+					<div class="div8-2y"></div>
+				</a>
+			</div>
+			<div class="div8-2 div8-2-1">
+				<a href="#">
+					<img src="good_shop1.png" class="img8">
+					<div>
+						<img src="shop_logo.png">
+						<p class="p1">美宝莲</p>
+						<p class="p2">纽约高街潮妆</p>
+					</div>
+					<div class="div8-2y"></div>
+				</a>
+			</div>
+		</div>
+		<div class="div9">
+			<div class="div9-1">
+				<hr><h2>品牌推荐</h2><hr>
+			</div>
+			<div class="div9-2">
+				<a href="#">
+					<img src="brand.jpg">
+				</a>
+			</div>
+			<div class="div9-3">
+				<div class="div9-3-1">
+					<div class="div-1-1">
+						<a href="#">
+							<img src="brand (1).jpg">
+						</a>
+						<div class="div-1-2">
+							<a href="#">
+								<span class="span9">关注人数</span>
+								0
+							</a>
+						</div>
+					</div>
+					<div class="div-1-1">
+						<a href="#">
+							<img src="brand (7).jpg">
+						</a>
+						<div class="div-1-2">
+							<a href="#">
+								<span class="span9">关注人数</span>
+								0
+							</a>
+						</div>
+					</div>
+					<div class="div-1-1">
+						<a href="#">
+							<img src="brand (9).jpg">
+						</a>
+						<div class="div-1-2">
+							<a href="#">
+								<span class="span9">关注人数</span>
+								0
+							</a>
+						</div>
+					</div>
+					<div class="div-1-1">
+						<a href="#">
+							<img src="brand (11).jpg">
+						</a>
+						<div class="div-1-2">
+							<a href="#">
+								<span class="span9">关注人数</span>
+								0
+							</a>
+						</div>
+					</div>
+					<div class="div-1-1">
+						<a href="#">
+							<img src="brand (12).jpg">
+						</a>
+						<div class="div-1-2">
+							<a href="#">
+								<span class="span9">关注人数</span>
+								0
+							</a>
+						</div>
+					</div>
+					<div class="div-1-1">
+						<a href="#">
+							<img src="brand (15).jpg">
+						</a>
+						<div class="div-1-2">
+							<a href="#">
+								<span class="span9">关注人数</span>
+								0
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="div9-3-1 div-3-2">
+					<div class="div-1-1">
+						<a href="#">
+							<img src="brand (1).jpg">
+						</a>
+						<div class="div-1-2">
+							<a href="#">
+								<span class="span9">关注人数</span>
+								0
+							</a>
+						</div>
+					</div>
+					<div class="div-1-1">
+						<a href="#">
+							<img src="brand (7).jpg">
+						</a>
+						<div class="div-1-2">
+							<a href="#">
+								<span class="span9">关注人数</span>
+								0
+							</a>
+						</div>
+					</div>
+					<div class="div-1-1">
+						<a href="#">
+							<img src="brand (9).jpg">
+						</a>
+						<div class="div-1-2">
+							<a href="#">
+								<span class="span9">关注人数</span>
+								0
+							</a>
+						</div>
+					</div>
+					<div class="div-1-1">
+						<a href="#">
+							<img src="brand (11).jpg">
+						</a>
+						<div class="div-1-2">
+							<a href="#">
+								<span class="span9">关注人数</span>
+								0
+							</a>
+						</div>
+					</div>
+					<div class="div-1-1">
+						<a href="#">
+							<img src="brand (12).jpg">
+						</a>
+						<div class="div-1-2">
+							<a href="#">
+								<span class="span9">关注人数</span>
+								0
+							</a>
+						</div>
+					</div>
+					<div class="div-1-1">
+						<a href="#">
+							<img src="brand (15).jpg">
+						</a>
+						<div class="div-1-2">
+							<a href="#">
+								<span class="span9">关注人数</span>
+								0
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="div9-3-1 div-3-2">
+					<div class="div-1-1">
+						<a href="#">
+							<img src="brand (1).jpg">
+						</a>
+						<div class="div-1-2">
+							<a href="#">
+								<span class="span9">关注人数</span>
+								0
+							</a>
+						</div>
+					</div>
+					<div class="div-1-1">
+						<a href="#">
+							<img src="brand (7).jpg">
+						</a>
+						<div class="div-1-2">
+							<a href="#">
+								<span class="span9">关注人数</span>
+								0
+							</a>
+						</div>
+					</div>
+					<div class="div-1-1">
+						<a href="#">
+							<img src="brand (9).jpg">
+						</a>
+						<div class="div-1-2">
+							<a href="#">
+								<span class="span9">关注人数</span>
+								0
+							</a>
+						</div>
+					</div>
+					<div class="div-1-1">
+						<a href="#">
+							<img src="brand (11).jpg">
+						</a>
+						<div class="div-1-2">
+							<a href="#">
+								<span class="span9">关注人数</span>
+								0
+							</a>
+						</div>
+					</div>
+					<div class="div-1-1">
+						<a href="#">
+							<img src="brand (12).jpg">
+						</a>
+						<div class="div-1-2">
+							<a href="#">
+								<span class="span9">关注人数</span>
+								0
+							</a>
+						</div>
+					</div>
+					<div class="div-1-1">
+						<a href="#">
+							<img src="brand (15).jpg">
+						</a>
+						<div class="div-1-2">
+							<a href="#">
+								<span class="span9">关注人数</span>
+								0
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="div10">
+			<div class="div10-1">
+				<hr><h2>店铺推荐</h2><hr>
+			</div>
+			<div class="div10-11">
+				<div class="div10-2">
+					<a href="#">
+						<img src="no_enough2.jpg" class="img10">
+						<span>
+							【情侣款】Camel骆驼男靴 时尚潮流英伦风马丁靴高帮皮靴 爆卖1万双！ 情侣马丁靴 好评如潮
+						</span>
+						&yen;555.00
+						<div class="div10-2y"></div>
+					</a>
+				</div>
+				<div class="div10-2">
+					<a href="#">
+						<img src="no_enough1.jpg" class="img10">
+						<span>
+							【情侣款】Camel骆驼男靴 时尚潮流英伦风马丁靴高帮皮靴 爆卖1万双！ 情侣马丁靴 好评如潮
+						</span>
+						&yen;555.00
+						<div class="div10-2y"></div>
+					</a>
+				</div>
+				<div class="div10-2">
+					<a href="#">
+						<img src="no_enough2.jpg" class="img10">
+						<span>
+							【情侣款】Camel骆驼男靴 时尚潮流英伦风马丁靴高帮皮靴 爆卖1万双！ 情侣马丁靴 好评如潮
+						</span>
+						&yen;555.00
+						<div class="div10-2y"></div>
+					</a>
+				</div>
+				<div class="div10-2">
+					<a href="#">
+						<img src="no_enough3.jpg" class="img10">
+						<span>
+							【情侣款】Camel骆驼男靴 时尚潮流英伦风马丁靴高帮皮靴 爆卖1万双！ 情侣马丁靴 好评如潮
+						</span>
+						&yen;555.00
+						<div class="div10-2y"></div>
+					</a>
+				</div>
+				<div class="div10-2">
+					<a href="#">
+						<img src="no_enough2.jpg" class="img10">
+						<span>
+							【情侣款】Camel骆驼男靴 时尚潮流英伦风马丁靴高帮皮靴 爆卖1万双！ 情侣马丁靴 好评如潮
+						</span>
+						&yen;555.00
+						<div class="div10-2y"></div>
+					</a>
+				</div>
+			</div>
+			<div class="div10-12">
+				<div class="div10-2">
+					<a href="#">
+						<img src="no_enough6.jpg" class="img10">
+						<span>
+							【情侣款】Camel骆驼男靴 时尚潮流英伦风马丁靴高帮皮靴 爆卖1万双！ 情侣马丁靴 好评如潮
+						</span>
+						&yen;555.00
+						<div class="div10-2y"></div>
+					</a>
+				</div>
+				<div class="div10-2">
+					<a href="#">
+						<img src="no_enough7.jpg" class="img10">
+						<span>
+							【情侣款】Camel骆驼男靴 时尚潮流英伦风马丁靴高帮皮靴 爆卖1万双！ 情侣马丁靴 好评如潮
+						</span>
+						&yen;555.00
+						<div class="div10-2y"></div>
+					</a>
+				</div>
+				<div class="div10-2">
+					<a href="#">
+						<img src="no_enough1.jpg" class="img10">
+						<span>
+							【情侣款】Camel骆驼男靴 时尚潮流英伦风马丁靴高帮皮靴 爆卖1万双！ 情侣马丁靴 好评如潮
+						</span>
+						&yen;555.00
+						<div class="div10-2y"></div>
+					</a>
+				</div>
+				<div class="div10-2">
+					<a href="#">					<img src="no_enough2.jpg" class="img10">
+						<span>
+							【情侣款】Camel骆驼男靴 时尚潮流英伦风马丁靴高帮皮靴 爆卖1万双！ 情侣马丁靴 好评如潮
+						</span>
+						&yen;555.00
+						<div class="div10-2y"></div>
+					</a>
+				</div>
+				<div class="div10-2">
+					<a href="#">
+						<img src="no_enough2.jpg" class="img10">
+						<span>
+							【情侣款】Camel骆驼男靴 时尚潮流英伦风马丁靴高帮皮靴 爆卖1万双！ 情侣马丁靴 好评如潮
+						</span>
+						&yen;555.00
+						<div class="div10-2y"></div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="div1">
+			<div class="div1-1">
+				<h3>新手上路</h3>
+				<a href="#">
+					<ul>
+						<li>售后流程</li>
+						<li>购物流程</li>
+						<li>订购方式</li>
+					</ul>
+				</a>
+			</div>
+			<div class="div1-1">
+				<h3>配送与支付</h3>
+				<a href="#">
+					<ul>
+						<li>货到付款区域</li>
+						<li>配送支付智能查询</li>
+						<li>支付方式说明</li>
+					</ul>
+				</a>
+			</div>
+			<div class="div1-1">
+				<h3>会员中心</h3>
+				<a href="#">
+					<ul>
+						<li>资金管理</li>
+						<li>我的收藏</li>
+						<li>产品质量包装</li>
+					</ul>
+				</a>
+			</div>
+			<div class="div1-1">
+				<h3>服务包证</h3>
+				<a href="#">
+					<ul>
+						<li>退换货原则</li>
+						<li>售后服务</li>
+						<li>产品质量包证</li>
+					</ul>
+				</a>
+			</div>
+			<div class="div1-1">
+				<h3>服务包证</h3>
+				<a href="#">
+					<ul>
+						<li>网站</li>
+						<li>选机咨询</li>
+						<li>投诉与建议</li>
+					</ul>
+				</a>
+			</div>
+			<div class="div1-1 div1-2">
+				<h3>关注我们</h3>
+				<a href="#">
+					<img src="erweima.png">
+				</a>
+			</div>
+		</div>
+		<div class="div2">
+			<div class="div2-1">X</div>
+			<a href="www.hao123.com">
+				<img src="red_package.png">
+			</a>
+		</div>
+	</footer>
+</body>
+<script src="./爱购物.js"></script>
+</html>
